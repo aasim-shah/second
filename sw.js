@@ -1,4 +1,7 @@
 self.addEventListener("install", e => {
-    console.log('install   asdf');
-
+    e.waitUntil(
+        caches.open("static").then(cache => {
+            return cache.addAll(["./" , "./images/logo192.png"]);
+        })
+    );
 });
