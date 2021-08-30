@@ -1,4 +1,4 @@
 self.addEventListener("install", e => {
-    console.log('install');
+    console.log('install   asdf');
 
 });
